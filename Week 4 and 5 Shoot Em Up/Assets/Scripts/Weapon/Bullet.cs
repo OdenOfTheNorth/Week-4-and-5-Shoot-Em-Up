@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -26,7 +24,7 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
 
-        transform.position += Time.deltaTime * moveSpeed * transform.forward;
+        transform.position += Time.deltaTime * moveSpeed * gameObject.transform.forward;
     }
 
     private void OnTriggerEnter(Collider other)

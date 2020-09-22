@@ -32,7 +32,7 @@ public class CharacterHealth : MonoBehaviour
     {
         if (_shield)
         {
-            if (_shield.canTakeDamage)
+            if (!_shield.canTakeDamage)
             {
                 currentHealth -= damage;
             }

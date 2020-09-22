@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerInput : MonoBehaviour 
+public class SavedPlayerInput : MonoBehaviour 
 {
     [SerializeField] private Slider healthSlider = null;
     public Slider ShieldSlider = null;
@@ -12,6 +12,8 @@ public class PlayerInput : MonoBehaviour
     private Movement _movement;
     private ShootRifle _shoot;
     private ShotGun _shotGun;
+    private BaseWeapon _baseWeapon;
+    private WeaponManager _manager;
     private CharacterHealth _health;
     private Shield _shield;
     [NonSerialized]public int playerScroolwheel;
@@ -22,13 +24,16 @@ public class PlayerInput : MonoBehaviour
         _shoot = GetComponent<ShootRifle>();
         _shotGun = GetComponent<ShotGun>();
         _health = GetComponent<CharacterHealth>();
+        _manager = GetComponent<WeaponManager>();
+        _baseWeapon = GetComponent<BaseWeapon>();
         _shield = GetComponent<Shield>();
         _health.OnUnitDied += OnPlayerDied;
         _health.OnHealthChanged += OnHealthChanged;
         GameController.GameControllerInstance.playerTransform = transform;
         GameController.GameControllerInstance.playerGameobject = gameObject;
-        _shoot.hitLayerShoot = enemyLayer;
-        _shotGun.hitLayerShoot = enemyLayer;
+        //_shoot.hitLayerShoot = enemyLayer;
+        //_shotGun.hitLayerShoot = enemyLayer;
+        _baseWeapon.hitLayerShoot = enemyLayer;
     }
 
     void Update()
@@ -39,11 +44,9 @@ public class PlayerInput : MonoBehaviour
         _shotGun.shootGunInput = Input.GetAxis("Fire2");
         _shield.Shieldinput = Input.GetAxis("ShieldInput");
 
-        if (Input.GetAxis("Fire1") != 0f ) {
-            _shotGun.shootGunInput = 0f;
-        }else if (Input.GetAxis("Fire2") != 0f) {
-            _shoot.shootInput = 0f;
-        }
+        //_shoot.shootInput = Input.GetAxis("Fire1");
+        _baseWeapon.shootInput = Input.GetAxis("Fire1");
+        //playerScroolwheel = Convert.ToInt16(Input.GetAxis("Mouse ScrollWheel") * 10f);
     }
     
     private void OnPlayerDied()

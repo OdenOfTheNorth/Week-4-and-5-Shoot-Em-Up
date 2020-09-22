@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5078407910656294443}
   m_Layer: 8
-  m_Name: GameObject
+  m_Name: FirePointEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,6 +148,9 @@ MonoBehaviour:
   origin: {fileID: 5078407910656294443}
   damage: 10
   coolDown: 0.5
+  Pellets: 2
+  Spread: 5
+  canShootWeapon: 1
 --- !u!114 &-109727845829115823
 MonoBehaviour:
   m_ObjectHideFlags: 0

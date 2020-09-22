@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class ShotGun : MonoBehaviour
+public class ShotGun : MonoBehaviour , IWeapon
 {
     
     [FormerlySerializedAs("projectile")] [SerializeField] private GameObject Bullet;
@@ -34,21 +34,11 @@ public class ShotGun : MonoBehaviour
         if (canShoot_shotGun)
         {
             currentCoolDown -= Time.deltaTime;
-            if ((shootGunInput != 0f && currentCoolDown <= 0f) || (currentCoolDown <= 0f && powerUp))
+            if (shootGunInput != 0f && currentCoolDown <= 0f)
             {
                 _shotGun = true;
             }
-            
-            if (powerUp)
-            {
-                currentPowerUpTime -= Time.deltaTime;
-                if (PowerUpTime <= 0f)
-                {
-                    currentPowerUpTime = PowerUpTime;
-                    powerUp = false;
-                }
-            }
-            
+
             if (_shotGun)
             {
                 //
@@ -69,11 +59,11 @@ public class ShotGun : MonoBehaviour
             }
         }
     }
-
     public void CreateBullet(float f1)
     {
         float angle = Spread * f1;
         Quaternion originOffset = Quaternion.AngleAxis(angle ,Vector3.up);
+        //Quaternion test = originOffset + new Vector3(origin.position.x,origin.position.y,origin.position.z);
         GameObject bullet = Instantiate(Bullet, origin.position, originOffset);
         Bullet bulletBehavior = bullet.GetComponent<Bullet>();
         bulletBehavior.Initialize(damage,hitLayerShoot);

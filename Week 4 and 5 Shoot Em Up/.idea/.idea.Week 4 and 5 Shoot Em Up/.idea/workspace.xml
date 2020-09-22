@@ -29,14 +29,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../SpaceShooter/SpaceShooter/Assets/Scripts/GameOverKillsText.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShotGunPickUp.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DestroyEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_PackageResourceImporter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KillTrackerText.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -63,17 +60,29 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/ShotGun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/ShieldPickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/MovementBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/Shield.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/CharacterHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/Shoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/EnemyBehaviorRandom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/EnemyBehavior.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/IWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/ShootRifle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/BaseWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/ShotGunBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/RifleBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/WeaponManagerOne.cs" />
+        <option value="$PROJECT_DIR$/Assets/SniperBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/WeaponManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/ShootRifle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/IWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/ShotGun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/BaseWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/SavedPlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/CharacterHealth.cs" />
       </list>
     </option>
   </component>
@@ -132,6 +141,7 @@
       <workItem from="1600426908636" duration="16065000" />
       <workItem from="1600559532109" duration="4186000" />
       <workItem from="1600693166364" duration="10843000" />
+      <workItem from="1600761287635" duration="22288000" />
     </task>
     <servers />
   </component>
@@ -156,13 +166,30 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-55" y="-8" width="1893" height="1028" maximized="true" key="dock-window-1" timestamp="1600563704684">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1511" y="-8" width="1413" height="1027" maximized="true" key="dock-window-1" timestamp="1600763590048">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1511" y="-8" width="1413" height="1027" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600763590048" />
     <state x="1964" y="-15" width="1893" height="1028" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1600087670713" />
     <state x="-55" y="-8" width="1893" height="1028" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@1920.0.1920.1040" timestamp="1600563704684" />
     <state x="1609" y="-19" width="1893" height="1028" maximized="true" key="dock-window-1/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600344118250" />
     <state x="-73" y="-12" width="1893" height="1028" maximized="true" key="dock-window-1/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1600343549906" />
+    <state x="0" y="77" width="1936" height="1048" key="dock-window-2" timestamp="1600763946429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="77" width="1936" height="1048" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600763946429" />
+    <state x="0" y="0" width="1676" height="1027" maximized="true" key="dock-window-3" timestamp="1600773899771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1676" height="1027" maximized="true" key="dock-window-3/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600773899771" />
+    <state x="130" y="0" width="1727" height="1027" maximized="true" key="dock-window-4" timestamp="1600786985130">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="130" y="0" width="1727" height="1027" maximized="true" key="dock-window-4/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600786985130" />
+    <state x="0" y="0" width="1727" height="1027" key="dock-window-5" timestamp="1600787641614">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1727" height="1027" key="dock-window-5/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600787641614" />
     <state x="2536" y="173" width="672" height="678" key="search.everywhere.popup" timestamp="1600440204821">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

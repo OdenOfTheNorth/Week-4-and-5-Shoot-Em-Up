@@ -21,13 +21,6 @@ public class ShotGun : MonoBehaviour , IWeapon
     [NonSerialized] public LayerMask hitLayerShoot;
 
     public float PowerUpTime = 4f;
-    private float currentPowerUpTime;
-    [NonSerialized] public bool powerUp = false;
-
-    private void Awake()
-    {
-        currentPowerUpTime = PowerUpTime;
-    }
 
     void Update()
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class ShootRifle : MonoBehaviour
+public class ShootRifle : MonoBehaviour , IWeapon
 {
 
     
@@ -20,20 +20,29 @@ public class ShootRifle : MonoBehaviour
         currentCoolDown -= Time.deltaTime;
         if (shootInput != 0f)
         {
-            Shoot();
+            CreateBullet(damage);
         }
     }
 
-    public void Shoot()
+    public void Shoot(float f1)
     {
         if (currentCoolDown <= 0f)
         {
             currentCoolDown = coolDown;
             GameObject projectileInstance = Instantiate(Bullet, origin.position, origin.rotation);
             Bullet bulletBehavior = projectileInstance.GetComponent<Bullet>();
-            bulletBehavior.Initialize(damage,hitLayerShoot);
+            bulletBehavior.Initialize(f1,hitLayerShoot);
         }
     }
-    
 
+    public void CreateBullet(float f1)
+    {
+        if (currentCoolDown <= 0f)
+        {
+            currentCoolDown = coolDown;
+            GameObject projectileInstance = Instantiate(Bullet, origin.position, origin.rotation);
+            Bullet bulletBehavior = projectileInstance.GetComponent<Bullet>();
+            bulletBehavior.Initialize(f1,hitLayerShoot);
+        }
+    }
 }

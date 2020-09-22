@@ -887,7 +887,7 @@ MonoBehaviour:
   SpawnerLocation: {fileID: 1664927410}
   Enemy: {fileID: 5078407912332666957, guid: 3bff5d9ffd3059b42b4debe0f92bffea, type: 3}
   EnemyRandom: {fileID: 5078407912332666957, guid: bfb7c403d936bba44abd5f338036ff94, type: 3}
-  ShotGunPickUp: {fileID: 0}
+  ShotGunPickUp: {fileID: 1558631440716082305, guid: 9c8381a914ac4e546b0d694f941238a3, type: 3}
   canSpawn: 1
   enemysPerWave: 5
   NextwaveSizeIncrease: 2

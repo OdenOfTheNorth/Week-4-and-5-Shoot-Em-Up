@@ -74,15 +74,15 @@
         <option value="$PROJECT_DIR$/Assets/SniperBase.cs" />
         <option value="$PROJECT_DIR$/Assets/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/ShootRifle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/IWeapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/ShotGun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/BaseWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/SavedPlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/CharacterHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharecterScripts/EnemyBehaviorRandom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/ShootRifle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/ShotGun.cs" />
       </list>
     </option>
   </component>
@@ -143,6 +143,7 @@
       <workItem from="1600693166364" duration="10843000" />
       <workItem from="1600761287635" duration="22288000" />
       <workItem from="1600799236325" duration="842000" />
+      <workItem from="1600800139522" duration="305000" />
     </task>
     <servers />
   </component>

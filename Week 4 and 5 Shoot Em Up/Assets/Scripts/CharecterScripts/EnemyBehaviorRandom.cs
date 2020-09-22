@@ -10,12 +10,14 @@ public class EnemyBehaviorRandom : MonoBehaviour
     private CharacterHealth health;
     private ShootRifle _shoot;
     private Vector3 position;
+    private GameObject _player;
 
     private void Awake()
     {
         movement = GetComponent<Movement>();
         health = GetComponent<CharacterHealth>();
         _shoot = GetComponent<ShootRifle>();
+        _player = GameController.GameControllerInstance.playerGameobject;
         _shoot.hitLayerShoot = PlayerLayer;
     }
 
@@ -37,6 +39,7 @@ public class EnemyBehaviorRandom : MonoBehaviour
 
     private void OnUnitDied()
     {
+        _player.GetComponent<CharacterHealth>().currentHealth += 5f;
         GameController.GameControllerInstance.EnemyDied();
         Spawner.enemySpawnerInstance.EnemyDied();
         Destroy(gameObject);

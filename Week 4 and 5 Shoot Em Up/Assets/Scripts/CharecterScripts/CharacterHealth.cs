@@ -32,7 +32,7 @@ public class CharacterHealth : MonoBehaviour
     {
         if (_shield)
         {
-            if (!_shield.canTakeDamage)
+            if (_shield.canTakeDamage)
             {
                 currentHealth -= damage;
             }
@@ -41,9 +41,11 @@ public class CharacterHealth : MonoBehaviour
                 currentHealth += healthRegeneration * Time.deltaTime * 3f;
             }
         }
-        
-        currentHealth -= damage;
-        
+        else
+        {
+            currentHealth -= damage; 
+        }
+
         OnHealthChanged?.Invoke(maxHealth, currentHealth);
 
         if (currentHealth <= 0.0f)
